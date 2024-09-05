@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Venda de Móveis a preço de Fábrica, venha conferir nosso preços">
+    <title>PRO Campos Móveis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- pra mandar o E-mail -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+     (function() {
+        emailjs.init("fwI4hAbLM8oH-xww8");
+     })();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="regiaoFigura" onclick="openWhatsApp()">
+        <img class="imgzap" src="img/whatsapp.svg" alt="figura whatsapp">
+        <div class="ball"></div>      
+    </div>
+
+    <header class="header">
+
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo-rustico-2.svg" alt="logotipo rustico">
+            </div>
+            
+            <div class="btn-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <nav class="menu item">
+                <a href="#id-ini">Início</a>
+                <a href="#id-nos">Nossa História</a>
+                <a href="#id-card">Catálogo</a>
+                <a href="#id-msg">Comentários</a>
+                <a href="#id-contato">Fale Conosco</a>                        
+            </nav>      
+            
+
+        </div>
+    </header>
+
+    <div class="hero-section" id="id-ini">
+        <div class="container">
+            <div class="content">            
+                <h1>A maior rede de móveis rústicos do Brasil</h1>
+                <p>Descubra a elegância do rústico com a durabilidade que você merece. Peças exclusivas para transformar sua casa.</p>
+                <button class="btn">Acessar Catálogo</button>
+            </div>        
+
+            <div class="image-hero">
+                <img src="img/cama-rustica.png" alt="figura da cama para venda">
+            </div>
+        </div>
+    </div> 
+
+    <div class="presentation container" id="id-nos">
+        
+        <div class="content">
+            <h2>Da nossa fábrica direto para sua casa!</h2>
+            <p>Trabalhamos com paixão e dedicação para trazer o melhor do mobiliário rústico diretamente para o conforto do seu lar. Cada peça é criada com o cuidado de quem entende a importância de uma casa bem decorada. Nossos móveis são projetados para durar, com atenção aos mínimos detalhes e acabamentos impecáveis.</p>
+            <p>Utilizamos apenas madeiras de origem certificada, respeitando o meio ambiente e garantindo a qualidade do produto final. Explore nossa linha exclusiva e sinta a diferença que a madeira certificada pode fazer em seu ambiente.</p>
+            <button class="btn">Peça uma Cotação</button>
+        </div>
+
+        <div class="image-present">
+            <img src="img/armario-rustico.png" alt="figura do armario para venda">
+        </div>
+    </div>
+
+    <div class="cardsection" id="id-card">
+
+        <div class="container">
+        
+            <div class="content-cards">
+                <h3>Madeiras certificadas</h3>
+            </div>
+                    
+            <div class="flex-cards">
+
+                <div class="card">
+                    <div class="content-cards">
+                        <img src="img/balcao.jpg" alt="figura do balcao para venda">
+                        <h4>Rústico para sua casa</h4>
+                        <p>Transforme sua casa com nossos móveis rústicos, que aliam beleza e praticidade. Oferecemos desde mesas de jantar robustas até estantes.</p>
+                        <button class="btn">Ver produtos</button>
+                    </div>    
+                </div>
+
+                <div class="card card-teste">
+                    <div class="circulo">
+                        <h5>Promoção</h5>
+                        <h5>TOP</h5>
+                    </div>
+                    
+                    <div class="content-cards">
+                        <img src="img/office.png" alt="figura do balcao office para venda">
+                        <h4>Rústico para seu trabalho</h4>
+                        <p>Crie um ambiente de trabalho único e inspirador com nossa linha de móveis rústicos para empresas. De mesas de reuniões a balcões de atendimento.</p>
+                        <button class="btn">Ver produtos</button>
+                    </div>    
+                </div>     
+
+            
+                <div class="card">
+                    <div class="content-cards">
+                        <img src="img/mesa.png" alt="figura da mesa para venda">
+                        <h4>Rústico para sua fazenda</h4>
+                        <p>Para quem vive no campo ou deseja trazer um pedaço da vida rural para o dia a dia, nossos móveis para fazenda são a escolha perfeita.</p>
+                        <button class="btn">Ver produtos</button>
+                    </div>    
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+   
+    <div class="comment" id="id-msg">
+
+        <div class="container">
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">                        
+                        <div class="depoimento">
+                             <h2>Qualidade impecável e preço justo. Recomendo!</h2>
+                             <p>João Silva</p>
+                        </div>
+                    </div>  
+
+                    <div class="swiper-slide">                        
+                        <div class="depoimento">
+                             <h2>Ótimo Atendimento e preço muito bom. Nota 10!</h2>
+                             <p>Pedro Gabriel</p>
+                        </div>
+                    </div>  
+
+                    <div class="swiper-slide">                        
+                        <div class="depoimento">
+                             <h2>Variedades de Móveis Clássicos e Rústicos para sua Residência</h2>
+                             <p>Débora Amaral</p>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="swiper-pagination"></div>          
+                
+            </div>    
+        </div>
+
+    </div>
+
+    <footer class="footer" id="id-contato">
+        <div class="container">
+            
+            <div>
+                <h3>Onde Estamos</h3>
+                <p>Av. Rio Branco, 185 - Centro - Rio de Janeiro - RJ</p>
+            </div>
+
+            <div>
+                <h3>Fale com nosso time</h3>
+                <p>(21) 2233-4455</p>
+                <p>(21) 98978-1234</p>
+            </div>
+
+            <div class="redes">
+                <h3>O Rústico nas redes</h3>
+                <div class="social">
+                    <a href="https://www.instagram.com/" title="Acessar Instagran" target="_blank"><img src="img/instagram.svg" alt="figura instagra"></a>
+                    <a href="https://twitter.com/?lang=pt-br" title="Acessar X" target="_blank"><img src="img/twitter.svg" alt="figura twiter"></a>
+                    <a href="https://www.youtube.com/" title="Acessar YouTube" target="_blank"><img src="img/Youtube.png" alt="figura youtube"></a>
+                    <a href="#openModal"><img src="img/email.png" alt="figura email"></a>
+                    
+                    <div id="openModal" class="modalDialog">
+                        <div class="contatos">
+                              <a href="#close" title="Close" class="close">X</a>
+                              <h2>Fale com a Rústico Móveis</h2>
+                                    
+                               <!---- <label for="nome">Digite seu Nome</label> ---->
+                               <input type="text" placeholder="Digite seu Nome" id="nome" required minlength="3"> 
+                               <input type="text" placeholder="Digite seu Email" id="email" required>
+                               <input type="text" placeholder="Digite o Assunto" id="assunto" required> 
+
+                               <textarea placeholder="Digite sua Mensagem" required minlength="10" maxlength="500" id="mensagem"></textarea>
+                               <button class="btn btn-outline" type="submit" id="enviarEmail">Enviar</button>                             
+                               
+                        </div>
+                      </div>
+
+                </div>    
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop:true,
+            autoplay: {
+                  delay: 3500,                  
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter:true
+             },          
+            pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+            },});
+    </script>
+
+</body>
+</html>
